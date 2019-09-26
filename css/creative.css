@@ -9731,3 +9731,50 @@ header.masthead h1 {
   opacity: 1;
 }
 
+.experience-header {
+  padding: 0;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.experience-header .drop-arrow {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-header .drop-arrow:before {
+  display: inline-block;
+  content: ' ';
+
+  width: 25px;
+  margin-right: -4px;
+  
+  border-bottom: 6px solid black;
+  border-radius: 0.5em;
+
+  transform: rotate(-25deg);
+  transition: 0.25s;
+}
+
+.experience-header .drop-arrow:after {
+  display: inline-block;
+  content: ' ';
+
+  width: 25px;
+  margin-left: -4px;
+
+  border-bottom: 6px solid black;
+  border-radius: 0.5em;
+
+  transform: rotate(25deg);
+  transition: 0.25s;
+}
+
+
+
+.down-before {
+  transform: rotate(30deg);
+}
+.down-after {
+  transform: rotate(-30deg);
+}

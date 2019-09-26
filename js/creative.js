@@ -57,8 +57,14 @@
 
   // Accordion Collapse Control
   var $group = $('#accordion-parent');
-  $group.on('show.bs.collapse','.collapse', function() {
+  $group.on('show.bs.collapse', function() {
     $group.find('.collapse.show').collapse('hide');
+    $group.find('.drop-arrow:before').addClass('.down-before');
+    $group.find('.drop-arrow:after').addClass('.down-after');
   });
+
+  $('.drop-arrow:before').addClass('.down-before');
+
+
 
 })(jQuery); // End of use strict

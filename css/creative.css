@@ -3975,7 +3975,7 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -9735,6 +9735,12 @@ header.masthead h1 {
   padding: 0;
   padding-top: 3rem;
   text-align: center;
+  transition: 0.25s;
+}
+
+.experience-header.selected,
+.experience-header:hover {
+  background-color: #007bff5e;
 }
 
 .experience-header .drop-arrow {
@@ -9770,11 +9776,12 @@ header.masthead h1 {
   transition: 0.25s;
 }
 
-
-
-.down-before {
+.experience-header .drop-arrow.down:before,
+.experience-header:hover .drop-arrow:before {
   transform: rotate(30deg);
 }
-.down-after {
+
+.experience-header .drop-arrow.down:after,
+.experience-header:hover .drop-arrow:after {
   transform: rotate(-30deg);
 }

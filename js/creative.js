@@ -57,14 +57,32 @@
 
   // Accordion Collapse Control
   var $group = $('#accordion-parent');
-  $group.on('show.bs.collapse', function() {
+  var moveArrows = function() {
+    $group.find('.drop-arrow').each(function(index, element) {
+      if ($(element).hasClass('upping')) {
+        $(element).removeClass('down');
+        $(element).parent().removeClass('selected');
+      }
+      if ($(element).hasClass('downing')) {
+        $(element).addClass('down');
+        $(element).parent().addClass('selected');
+      }
+      $(element).removeClass('downing');
+      $(element).removeClass('upping');
+    });
+  }
+
+  $group.on('show.bs.collapse', '.collapse', function() {
     $group.find('.collapse.show').collapse('hide');
-    $group.find('.drop-arrow:before').addClass('.down-before');
-    $group.find('.drop-arrow:after').addClass('.down-after');
+    $group.find('.drop-arrow.down').addClass('upping');
   });
 
-  $('.drop-arrow:before').addClass('.down-before');
-
+  $(".experience-header").click(function() {
+    if (!$(this).find('.drop-arrow').hasClass('down')){
+      $(this).find('.drop-arrow').addClass('downing');
+    }
+    moveArrows();
+  });
 
 
 })(jQuery); // End of use strict

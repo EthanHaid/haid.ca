@@ -72,7 +72,7 @@
 
     if (keepOpen) {
       $(this).find('.drop-arrow').addClass('down');
-      $(this).addClass('selected');
+      $(this).find('.header-container').addClass('selected');
     }
   });
 

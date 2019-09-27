@@ -9740,7 +9740,7 @@ header.masthead h1 {
 
 .experience-header.selected,
 .experience-header:hover {
-  background-color: #007bff5e;
+  background-color: lightgray;
 }
 
 .experience-header .drop-arrow {

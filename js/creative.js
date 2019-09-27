@@ -55,33 +55,25 @@
     }
   });
 
-  // Accordion Collapse Control
+  // Experience Dropdown Control
   var $group = $('#accordion-parent');
-  var moveArrows = function() {
-    $group.find('.drop-arrow').each(function(index, element) {
-      if ($(element).hasClass('upping')) {
-        $(element).removeClass('down');
-        $(element).parent().removeClass('selected');
-      }
-      if ($(element).hasClass('downing')) {
-        $(element).addClass('down');
-        $(element).parent().addClass('selected');
-      }
-      $(element).removeClass('downing');
-      $(element).removeClass('upping');
-    });
-  }
-
   $group.on('show.bs.collapse', '.collapse', function() {
     $group.find('.collapse.show').collapse('hide');
-    $group.find('.drop-arrow.down').addClass('upping');
   });
 
+  // Animate Experience Headers
   $(".experience-header").click(function() {
-    if (!$(this).find('.drop-arrow').hasClass('down')){
-      $(this).find('.drop-arrow').addClass('downing');
+    let keepOpen = !$(this).find('.drop-arrow').hasClass('down');
+
+    $group.find('.drop-arrow').each(function(index, element) {
+      $(element).removeClass('down');
+      $(element).parent().removeClass('selected');
+    });
+
+    if (keepOpen) {
+      $(this).find('.drop-arrow').addClass('down');
+      $(this).addClass('selected');
     }
-    moveArrows();
   });
 
 

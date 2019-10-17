@@ -9737,9 +9737,10 @@ header.masthead h1 {
 }
 
 .experience-header .header-container {
+  height: 100%;
   margin: 0;
   padding: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
   transition: 0.25s;
 }
 
@@ -9749,6 +9750,12 @@ header.masthead h1 {
 }
 
 .experience-header .drop-arrow {
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -9789,4 +9796,13 @@ header.masthead h1 {
 .experience-header .drop-arrow.down:after,
 .experience-header:hover .drop-arrow:after {
   transform: rotate(-30deg);
+}
+
+.experience-list {
+  text-align: left;
+  margin: 3rem 0 3rem 0;
+}
+
+.experience-list li {
+  margin: 0 0 1rem 0;
 }

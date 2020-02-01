@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.haid.ca [NC]
+RewriteRule ^(.*)$ https://haid.ca/$1 [L,R=301]

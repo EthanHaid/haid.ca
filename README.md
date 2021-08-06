@@ -1,4 +1,4 @@
-Ethan Haid's Personal Website
+# Ethan Haid's Personal Website
 
 ## Status
 

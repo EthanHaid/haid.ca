@@ -1,6 +1,10 @@
+.masthead {
+  padding: 8rem 0;
+}
+
 .title-name {
   margin: 0 1rem 4rem 1rem;
-  padding: 0 1rem;
+  padding: 0 0.5rem 0 1rem;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   font-weight: bold;
 }

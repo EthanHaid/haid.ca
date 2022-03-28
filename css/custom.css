@@ -1,17 +1,36 @@
 .masthead {
-  padding: 8rem 0;
+  padding: 2rem 0;
+}
+
+.profile-img {
+  width: 25%;
+  border-radius: 50%;
 }
 
 .title-name {
-  margin: 0 1rem 4rem 1rem;
-  padding: 0 0.5rem 0 1rem;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   font-weight: bold;
+  margin: auto auto 2rem 1rem;
 }
 
-.mast-title {
-  display: flex;
-  flex-direction: row;
+@media (min-width: 320px) {
+  .title-name {
+    padding: 0 0 0 1rem;
+  }
+
+  .btn-skills,
+  .mast-content {
+    margin-top: 1.5rem;
+    
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-skills,
+  .mast-content {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .card-img-top {

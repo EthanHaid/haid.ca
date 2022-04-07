@@ -7,6 +7,10 @@
   border-radius: 50%;
 }
 
+.social-buttons {
+  opacity: 75%;
+}
+
 .title-name {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   font-weight: bold;
@@ -18,15 +22,15 @@
     padding: 0 0 0 1rem;
   }
 
-  .btn-skills,
+  .social-buttons,
   .mast-content {
-    margin-top: 1.5rem;
-    
+    margin-top: 0rem;
+    margin-bottom: 1rem;
   }
 }
 
 @media (min-width: 768px) {
-  .btn-skills,
+  .social-buttons,
   .mast-content {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
@@ -35,4 +39,8 @@
 
 .card-img-top {
   height: 310px;
+}
+
+.logo {
+  max-height: 25rem;
 }

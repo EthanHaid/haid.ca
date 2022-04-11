@@ -7,10 +7,6 @@
   border-radius: 50%;
 }
 
-.social-buttons {
-  opacity: 75%;
-}
-
 .title-name {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   font-weight: bold;
@@ -21,12 +17,16 @@
   .title-name {
     padding: 0 0 0 1rem;
   }
+}
 
-  .social-buttons,
-  .mast-content {
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-  }
+.social-buttons {
+  opacity: 75%;
+}
+
+.social-buttons,
+.mast-content {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -43,4 +43,16 @@
 
 .logo {
   max-height: 25rem;
+}
+
+.email-btn {
+  transition: background-color 0.1s linear;
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+}
+
+.email-btn:hover {
+  background-color: rgb(164, 166, 168);
+  text-decoration: none;
 }
